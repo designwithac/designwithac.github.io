@@ -7,19 +7,40 @@
     <link rel="shortcut icon" type="images/png" href="favicon.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 <body>
     <header class="header">
-        <div class="logo__box">de.wh.AC</div>
-        <div class="toggle__navbar">
+        <div class="logo__box"> 
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <span class="color--1">dgn.</span>
+            <span class="color--2">wd.</span>
+            <span class="color--3">AC</span>
+        </div>
+        <div class="toggle__navbar" id="show_menu">
             <i class="fa fa-bars toggle__icon"></i>
         </div>
     </header>
+    <div class="navbar__overlay">
+        <nav class="navbar__container">
+            <a class="navbar__link navbar__link--active" data-text="Home" href="" >Home</a>
+            <a class="navbar__link" data-text="About" href="" >About</a>
+            <a class="navbar__link" data-text="Portfolio" href="">Portfolio</a>
+            <a class="navbar__link" data-text="Designs" href="" >Designs</a>
+            <a class="navbar__link" data-text="Tutorials" href="" >Tutorials</a>
+            <a class="navbar__link" data-text="Contact" href="">Contact</a>
+        </nav>
+        <div class="close__button" id="close__menu">
+            <i class="fa fa-times"></i>
+        </div>
+    </div>
     <main class="">
         <section class="landing container">
             <h1 class="landing__heading">Hello There</h1>
             <p class="landing__detail">
-                Well, you are loking at the website of someone who likes minimal design just like the personality. What else? I design UI/UX, Web Application, Mobile Application and many more. Check out my latest works here..
+                Well, you are looking at the website of someone who likes minimal design just like the personality. What else? I design UI/UX, Web Application, Mobile Application and many more. Check out my latest works here..
             </p>
         </section>
 
@@ -112,5 +133,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
