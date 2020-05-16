@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #e74c3c;
+    --primary-color-light: #e74c3c; 
+    --primary-color-dark: #e74c3c; 
+
+    --secondary-color: #16a085;
+
+    --gray-color-dark: #333;
+    --gray-color-medium: rgb(71, 71, 71);
+    --gray-color-light: #757575;
+    --gray-color-extra-light: #a7a7a7;
+
+    --white-color: #fff;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    background-color: var(--gray-color-dark);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .9rem;
+}
+
+/* logo here */
+.logo__box{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circle{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    background-color: #16a08570;
+    z-index: -1;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+}
+/* .circle:nth-of-type(2){
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    left:35%;
+    background-color: #34495e;
+} */
+.color--1{
+    color: #34495e
+}
+.color--2{
+    color: #d35400;
+}
+.color--3{
+    color: #16a085
+}
+
+
+main{
+    height: calc( 100vh - 2rem );
+    width: 100%;
+    color: var(--white-color);
+    text-align: center;
+}
+.heading--primary, .heading--secondary{
+    text-transform: uppercase;
+}
+.heading--primary{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+.heading--primary span{
+    color: var(--primary-color);
+}
+.heading--secondary{
+    font-size: 1.3rem;
+    letter-spacing: .6rem;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.landing__detail, .subscribe__text, .footer__text{
+    color: var(--gray-color-extra-light);
+    font-size: .7rem;
+    padding: 1rem 4rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.landing__countdown{
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--gray-color-medium);
+}
+.countdown__box{
+    display: flex;
+    position: relative;
+}
+.box{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--gray-color-medium);
+    margin: 0 3px;
+}
+.countdown__label{
+    position: absolute;
+    font-size: 1rem;
+    top: -2.2rem;
+    left: .2rem;
+    text-transform: uppercase;
+}
+
+.time__value--d,
+.time__value--h,
+.time__value--m,
+.time__value--s
+{
+    position: absolute;
+    font-size: 3rem;
+    /* left: 13%; */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    letter-spacing: 3.4rem;
+}
+.time__value--d{
+    left: 11%;
+}
+.time__value--h{
+    left: 16%;
+}
+.time__value--m{
+    left: 19%;
+}
+.time__value--s{
+    left: 16%;
+}
+
+/* subscribe section */
+.subscribe__section{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gray-color-medium);
+}
+.subscribe__heading{
+    /* margin-bottom: 1.2rem; */
+}
+.subscribe__text{
+    /* color: var(--gray-color-extra-light); */
+}
+.subscribe__form{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe__input,
+.subscribe__button{
+    padding: .8rem 1.7rem;
+}
+.subscribe__input{
+    width: 50%;
+    background-color: var(--gray-color-medium);
+    outline: none;
+    border: none;
+    padding: 1rem .6rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--gray-color-extra-light)
+}
+.subscribe__input::placeholder{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.subscribe__button{
+    margin: 0 .6rem;
+    display: inline-block;
+    padding: .8rem 1.7rem;
+    background-color: var(--primary-color);
+    transition: .5s ease;
+}
+.subscribe__button:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    font-weight: 500;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}
+.footer__text p{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+.footer__text a{
+    color: var(--secondary-color);
+    /* margin-top: 1rem; */
+    padding: .3rem 0;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: .5s ease;
+
+}
+.footer__text a:hover{
+    color: var(--white-color)
+}
