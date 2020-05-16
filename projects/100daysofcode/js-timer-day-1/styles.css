@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: rgb(255, 251, 0);
+}
+
+body, .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--main-color);
+    background-color: #333;
+    height: 100vh;
+}
+.container{
+    padding: 3rem;
+    background: #3a3a3a;
+    width: 30%;
+    border-radius: .5rem;
+}
+.container > *{
+    margin: 1rem 0;
+}
+
+.timer{
+    font-size: 3rem;
+}
+.timer-button{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 30%;
+    padding: .6rem 1.4rem;
+    font-weight: 900;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border: none;
+    margin: 0 .2rem;
+    background: #333;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+    box-shadow: 0 .3rem 1rem #00000040;
+}
+
+#lapse{
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.timer-lapses{
+    padding: 2rem 0;
+}
+.timer-lapses h3{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.timer-lapses ul{
+    list-style: none;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 1rem;
+    text-align: center;
+}
+.timer-lapses ul li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding: 1rem 0;
+}
+.timer-lapses ul li::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    bottom: 0;
+}
