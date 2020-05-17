@@ -87,7 +87,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
 }
 .landing__heading{
@@ -99,6 +99,7 @@ body{
 .landing__detail{
     font-size: 1.2rem;
     color: #757575;
+    width: 75%;
 }
 
 /* portfolio */
@@ -120,7 +121,11 @@ body{
     padding: 0 3rem;
 }
 .portfolio__category ul{
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .portfolio__category ul li{
     display: inline-block;
@@ -168,6 +173,7 @@ body{
     cursor: pointer;
     transition: box-shadow .5s ease;
     overflow: hidden;
+    transition: all .3s ease;
 }
 /* .portfolio__card:not(:last-child){
     margin-right: 1rem;

@@ -1,0 +1,110 @@
+@media only screen and (max-width: 1300px){
+    .portfolio__header{
+        flex-direction: column;
+    }
+    .primary__heading{
+        padding: 2rem 0 1rem;
+        margin-bottom: 0;
+    }
+    .portfolio__category{
+        padding-bottom: 1rem;
+    }
+
+    .secondary__heading{
+
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .portfolio__header{
+        position: relative;
+    }
+    
+    .secondary__heading{
+        font-size: 1rem;
+    }
+    .navbar__link{
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .portfolio__detail{
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .landing__detail{
+        width: 85%;
+    }
+    
+    .portfolio__category ul>*{
+        font-size: .6rem;
+    }
+    .portfolio__category--active{
+        padding: 0;
+        border:none
+    }
+    .secondary__heading{
+        font-size: .9rem;
+    }
+    .view-all{
+        display: none;
+    }
+    .navbar__link{
+        font-size: 1.4rem;
+        margin: .5rem .6rem;
+        padding: 2px;
+        text-align: center;
+    }
+    .navbar__container{
+        flex-direction: column;
+    }
+    .portfolio__card{
+        height: 50vh;
+    }
+}
+@media only screen and (max-width: 550px){
+    .portfolio__card{
+        width: 48%;
+    }
+    .secondary__heading{
+        font-size: .8rem;
+    }
+    .portfolio__category ul, .view-all{
+        display: none;
+    }
+    .landing__detail{
+        width: 80%;
+    }
+    .footer__links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__links>*{
+        margin: .5rem 0;
+    }
+    .view-more__button{
+        padding: .8rem 1.5rem;
+        font-size: .8rem;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0 1rem 1.5rem #d3540080;
+    }
+    .portfolio__card{
+        height: 45vh;
+    }
+    
+}
+@media only screen and (max-width: 400px){
+    .portfolio__card{
+        width: 100%;
+    }
+    .secondary__heading{
+        font-size: .8rem;
+    }
+    .landing__detail{
+        width: 90%;
+    }
+    
+}
