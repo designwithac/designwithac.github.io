@@ -94,15 +94,15 @@ main{
     letter-spacing: .6rem;
 }
 .container{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 8rem 0 0;
 }
 
 .landing__detail, .subscribe__text, .footer__text{
     color: var(--gray-color-extra-light);
     font-size: .7rem;
-    padding: 1rem 4rem;
+    padding: 1rem 0;
     width: 70%;
     margin: 0 auto;
 }
@@ -210,6 +210,10 @@ main{
 /* footer */
 .footer{
     text-align: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer__text p{
     font-size: .8rem;

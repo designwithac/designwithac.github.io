@@ -1,0 +1,83 @@
+@media only screen and (max-width: 992px){
+    .landing__countdown{
+        width: 90%;
+        margin: 0 auto;
+        /* padding: 0 2rem; */
+        justify-content: space-around;
+    }
+    .countdown__box{
+        display: flex;
+        position: relative;
+    }
+    .box{
+        width: 4rem;
+        height: 4rem;
+    }
+    .countdown__label{
+        font-size: .9rem;
+    }
+
+    .time__value--d,
+    .time__value--h,
+    .time__value--m,
+    .time__value--s
+    {
+        font-size: 2rem;
+    }
+    .landing__detail{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .landing__countdown{
+        width: 80%;
+    }
+    .box{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .countdown__label{
+        font-size: .8rem;
+        left: .2rem;
+        text-transform: uppercase;
+    }
+
+    .time__value--d,
+    .time__value--h,
+    .time__value--m,
+    .time__value--s
+    {
+        font-size: 1.2rem;
+    }
+    .heading--primary{
+        font-size: 1.4rem;
+    }
+    .heading--secondary{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 590px){
+    .landing__countdown{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .countdown__box:not(:last-child){
+        margin-bottom: 5rem;
+    }
+    .countdown__label{
+        font-size: .8rem;
+        /* left: -5rem; */
+        /* top: 35%; */
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .landing__detail{
+        padding: 1rem 2rem;
+    }
+    .subscribe__text{
+        width: 70%;
+    }
+}
