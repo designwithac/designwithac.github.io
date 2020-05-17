@@ -17,14 +17,16 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--main-color);
     background-color: #333;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .container{
     padding: 3rem;
     background: #3a3a3a;
-    width: 30%;
+    /* width: 30%; */
     border-radius: .5rem;
 }
+
+
 .container > *{
     margin: 1rem 0;
 }
@@ -39,6 +41,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 button{
     width: 30%;
     padding: .6rem 1.4rem;
@@ -88,4 +91,20 @@ button:focus{
     width: 100%;
     border-bottom: 1px solid #fff;
     bottom: 0;
+}
+
+@media only screen and (max-width: 550px){
+    body{
+        padding: 0 4rem;
+    }
+    .timer-button{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    button{
+        width: 100%;
+        margin-top: .5rem;
+    }
+
 }
