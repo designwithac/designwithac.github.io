@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Calculator | 100DaysOfCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="heading">
+            <h1 class="main__header">Day 3</h1>
+            <div class="logo__box"> 
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <span class="color--1">dgn.</span>
+                <span class="color--2">wd.</span>
+                <span class="color--3">AC</span>
+            </div>
+            <div class="theme__toggle">
+                <div class="theme__switch-wrapper">
+                    <label for="checkbox" class="theme__switch">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="calculator">
+                <div id="result">
+                    <div id="history">
+                        <p id="history-value">0</p>
+                    </div>
+                    <div id="output">
+                        <div id="output-value">0</div>
+                    </div>
+                </div>
+
+                <!-- //keybords -->
+                <div id="key__container">
+                    <button class="button operator" id="clear">C</button>
+                    <button class="button operator" id="backspace">CE</button>
+                    <button class="button operator" id="%">%</button>
+                    <button class="button operator" id="/">&#247;</button>
+
+                    <button class="button number" id="7">7</button>
+                    <button class="button number" id="8">8</button>
+                    <button class="button number" id="9">9</button>
+                    <button class="button operator" id="*">&times;</button>
+
+                    <button class="button number" id="4">4</button>
+                    <button class="button number" id="5">5</button>
+                    <button class="button number" id="6">6</button>
+                    <button class="button operator" id="-">-</button>
+
+                    <button class="button number" id="1">1</button>
+                    <button class="button number" id="2">2</button>
+                    <button class="button number" id="3">3</button>
+                    <button class="button operator" id="+">+</button>
+
+                    <button class="button empty" id="apple"></button>
+                    <button class="button number" id="0">0</button>
+                    <button class="button empty" id="empty">.</button>
+                    <button class="button operator" id="=">=</button>                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
