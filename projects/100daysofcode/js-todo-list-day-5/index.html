@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List | 100DaysofCode - Day 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="todo__container">
+            <div class="todo__input-box">
+                <input type="text" class="todo__input" id="input" placeholder="Add Your todo list here">
+                <button class="todo__button">Add <span></span></button>
+            </div>
+
+            <div class="todo__filters">
+                <ul class="todo__filter-list">
+                    <li id="all" class="todo__filter-tab">All </li>
+                    <li id="completed" class="todo__filter-tab">Completed</li>
+                    <li id="incompleted" class="todo__filter-tab">Incompleted</li>
+                </ul>
+            </div>
+
+
+            <div class="todo__list-container">
+                <div class="todo__header">
+                    <h2 class="todo__title">Todo lists for today </h2>
+                    <p id="date"></p>
+                </div>
+
+                <ul class="todo__list"></ul>
+                <!-- <div class="todo__item-container">
+                    <li class="todo__item">Go to shopping </li>
+                    <button class="todo__delete-btn">Delete</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
