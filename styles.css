@@ -19,6 +19,45 @@ body{
     font-family: "Poppins", sans-serif;
     position: relative;
 }
+#cursor{
+    width: 40px;
+    height: 40px;
+    border: 3px solid #d3540080;
+    border-radius: 50%;
+    position: fixed;
+    box-sizing: border-box;
+    transition: all .1s ease;
+    transform: translate(-50%, -50%) rotate(0deg);
+    pointer-events: none;
+    z-index: 11111;
+    top: 0;
+    left: 0;
+}
+.cursor-hovered{
+    width: 100px!important;
+    height: 100px !important;
+    border:none!important;
+    background-color: #d35400b7;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: .5s ease-in-out;
+    animation: rotate-anim 5s linear infinite;
+    cursor: pointer;
+}
+@keyframes rotate-anim{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+body>a:hover ~ #cursor{
+    width: 100px;
+    height: 100px;
+    transition: .1s ease;
+}
+
 .container{
     padding: 2rem 3rem;
 
@@ -211,18 +250,20 @@ body{
     transform: translateY(3rem); 
 }
 .portfolio__card:hover{
-    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.4);
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.1);
 }
 .portfolio__card:hover .portfolio__image-box img{
     transform: scale(.7);
+    filter: blur(10px);
 }
 .portfolio__card:hover .portfolio__detail{
-    background-image: linear-gradient(to bottom right, #d3540099, #a7430099);
+    /* background-image: linear-gradient(to bottom right, #d3540099, #a7430099); */
     opacity: 1;
     transform: translateY(0); 
 }
 .portfolio__card:hover .portfolio__detail h3, .portfolio__detail p{
-    color: var(--color-white);
+    color: var(--color-gray-dark);
+    font-weight: 700;
     opacity: 1;
     transform: translateY(0); 
 }
