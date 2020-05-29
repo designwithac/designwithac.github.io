@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Reciepe app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#" class="logo__box"> 
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <span class="color--1">dgn.</span>
+        <span class="color--2">wd.</span>
+        <span class="color--3">AC</span>
+    </a>
+    <main class="container">
+        <section class="landing">
+            <h1 class="main__header">Drag and Drop Recipe</h1>
+            <div class="food__recommendation">
+                <div class="ingredient">
+                    <div class="ingredient__different">
+                        <h3>Default Ingredients</h3>
+                        <ul class="different__lists">
+                            <li draggable="true" class="different__item">tomato</li>
+                            <li draggable="true" class="different__item">garlic</li>
+                            <li draggable="true" class="different__item">chicken</li>
+                            <li draggable="true" class="different__item">cilantro</li>
+                            <li draggable="true" class="different__item">cumin</li>
+                            <li draggable="true" class="different__item">sauce</li>
+                            <li draggable="true" class="different__item">citrus juice</li>
+                        </ul>
+                    </div>
+                    <div class="ingredient__default">
+                        <h3>Different Ingredients</h3>
+                        <ul class="ingredient__lists">
+                            <li class="ingredient__item default__item">egg</li>
+                            <li class="ingredient__item default__item">bacon</li>
+                            <li class="ingredient__item default__item">onions</li>
+                            <li class="ingredient__item default__item">bread crumbs</li>
+                            <li class="ingredient__item default__item">garlic</li>
+                            <li class="ingredient__item default__item">grated cheese</li>
+                            <li class="ingredient__item default__item">peppers</li>
+                            <li class="ingredient__item default__item">BBQ sauce</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cooking__pot">
+                        <div class="pot">
+
+                        </div>
+                        <button id="get-suggestion">
+                            get food suggestion
+                        </button>
+                </div>
+                <div class="food__suggestions">
+                    <h3>Food Suggestions</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="container">
+        <p>footer</p>
+        <p><a href="">Home</a></p>
+    </footer> -->
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

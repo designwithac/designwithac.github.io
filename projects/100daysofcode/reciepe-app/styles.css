@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    height: 100vh;
+}
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
+header{
+    padding: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 10px 7px #33333310;
+}
+
+.logo{
+    color: #e74c3c;
+}
+
+
+.logo__box{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    left: 10%;
+    transform: translateX(-50%);
+    font-family: "Poppins", sans-serif;
+    align-self: flex-end;
+    text-decoration: none;
+}
+.circle{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    background-color: #16a08570;
+    z-index: -1;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+}
+/* .circle:nth-of-type(2){
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    left:35%;
+    background-color: #34495e;
+} */
+.color--1{
+    color: #34495e
+}
+.color--2{
+    color: #d35400;
+}
+.color--3{
+    color: #16a085
+}
+
+.main__header{
+    display: block;
+    width: 100%;
+    color: #757575;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* food recommendation css */
+.food__recommendation{
+    padding: .5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.food__recommendation > * {
+    /* background-color: #fff; */
+    padding: 1.5rem;
+}
+.ingredient{
+    width: 23%;
+}
+.ingredient__default, .ingredient__different{
+}
+.different__item{
+    padding: .5rem 1rem;
+    background-color: #ebebeb;
+    margin: .3rem;
+    font-size: .8rem;
+    display: inline-block;
+    color: #e74c3c;
+    cursor: move;
+    border-radius: 5px;
+}
+.drag-start{
+    opacity: .5;
+}
+.different__lists{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: inline-block; */
+}
+.default__item{
+    padding: .5rem 1rem;
+    background-color: #ebebeb;
+    margin: .3rem;
+    font-size: .8rem;
+    display: inline-block;
+    color: #757575;
+    cursor: not-allowed;
+}
+.cooking__pot{
+    width: 48%;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pot{
+    width: 28rem;
+    height: 28rem;
+    /* background-color: ; */
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    /* background: #fff; */
+    box-shadow: 3px 3px 10px #ebebeb, -3px -3px 6px #fff;
+    transform: rotate(0deg);
+    animation: circle 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+.pot::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    z-index: -1;
+    background-color: #fda085;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 10px #33333330, inset -3px -3px 6px #f6d365;
+}
+#get-suggestion{
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    transform: translateX(-50);
+    padding: 1.3rem 2rem;
+    width: 100%;
+    background-color: #e74c3c;
+    border:none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#get-suggestion:hover{
+    background-color: #ebebeb;
+    color: #e74c3c;
+}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(260deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.item-hovered{
+    background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%);
+    border: 3px dashed #757575;
+    transition: all .5s ease-in-out;
+}
+.item-entered{
+
+}
+.item-dropped{
+
+}
+.food__suggestions{
+    width: 18%;
+}
+
+.suggested__food{
+    padding: 1rem;
+    background-color: #e74c3c;
+    width: 100%;
+    color: #fff;
+    margin: .5rem 0;
+    border-radius: 10px;;
+}
+
+footer{
+    padding: 1rem;
+    background-color: #ebebeb;
+}
