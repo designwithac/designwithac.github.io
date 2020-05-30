@@ -15,17 +15,17 @@
         <div class="main__inner-container">
             <nav class="navbar">
                 <div class="logo__box">
-                    <img class="logo__image" src="https://www.publicdomainpictures.net/pictures/320000/velka/coronavirus-infection-clip-art.jpg" alt="logo">
+                    <img class="logo__image" src="https://image.flaticon.com/icons/png/512/2750/2750835.png" alt="logo">
                 </div>
                 <ul class="navbar__list">
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link page__link ">
+                        <a href="#" class="navbar__link page__link navbar__link--active">
                             <i class="navbar__icon fas fa-th"></i>
                             <span>Dashboard</span>
                         </a> 
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__link page__link navbar__link--active">
+                        <a href="#" class="navbar__link page__link ">
                             <i class="navbar__icon fas fa-map"></i>
                             <span>Map</span>
                         </a> 
@@ -45,7 +45,7 @@
                     <li class="navbar__item">
                         <a href="#" class="navbar__link page__link">
                             <i class="navbar__icon fas fa-newspaper"></i>
-                            <span>News and Articles</span>
+                            <span>News</span>
                         </a> 
                     </li>
                     <li class="navbar__item">
@@ -115,7 +115,7 @@
                         <div class="country__list">
                             <div class="country__box">
                                 <div class="circle__chart">
-                                    circle
+                                    <img src="https://pngimage.net/wp-content/uploads/2018/06/progress-bar-circle-png-3.png" alt="">
                                 </div>
                                 <div class="country__detail">
                                     <h4 class="country__name">China</h4>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="country__box">
                                 <div class="circle__chart">
-                                    circle
+                                    <img src="https://pngimage.net/wp-content/uploads/2018/06/progress-bar-circle-png-3.png" alt="">
                                 </div>
                                 <div class="country__detail">
                                     <h4 class="country__name">India</h4>
@@ -139,7 +139,7 @@
                             </div>
                             <div class="country__box">
                                 <div class="circle__chart">
-                                    circle
+                                    <img src="https://pngimage.net/wp-content/uploads/2018/06/progress-bar-circle-png-3.png" alt="">
                                 </div>
                                 <div class="country__detail">
                                     <h4 class="country__name">Italy</h4>
@@ -205,7 +205,7 @@
                 <div class="country__report">
                     <div class="country__report-header">
                         <h2 class="header__normal">Country Reports</h2>
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" id="search-icon"></i>
                     </div>
                     <div class="country__search hide">
                         <input type="text" placeholder="Search Country..." id="country__input">
@@ -255,5 +255,7 @@
             Covid-tracker
         </div>
     </footer>
+
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
