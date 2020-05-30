@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Statistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="main container">
+        <div class="main__inner-container">
+            <nav class="navbar">
+                <div class="logo__box">
+                    <img class="logo__image" src="https://www.publicdomainpictures.net/pictures/320000/velka/coronavirus-infection-clip-art.jpg" alt="logo">
+                </div>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link ">
+                            <i class="navbar__icon fas fa-th"></i>
+                            <span>Dashboard</span>
+                        </a> 
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link navbar__link--active">
+                            <i class="navbar__icon fas fa-map"></i>
+                            <span>Map</span>
+                        </a> 
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link">
+                            <i class="navbar__icon fas fa-allergies"></i>
+                            <span>Symptoms</span>
+                        </a> 
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link">
+                            <i class="navbar__icon fas fa-info-circle"></i>
+                            <span>Informations</span>
+                        </a> 
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link">
+                            <i class="navbar__icon fas fa-newspaper"></i>
+                            <span>News and Articles</span>
+                        </a> 
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link page__link">
+                            <i class="navbar__icon fas fa-headset"></i>
+                            <span>Support</span>
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+            <section class="stats">
+                <div class="stats__count">
+                    <div class="stats__box">
+                        <div class="stats__text ">
+                            <p>Total Cases</p>
+                            <h2 id="total__cases">309,890</h2>
+                        </div>
+                        <div class="stats__graph">
+                            <img src="img/graph.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="stats__box">
+                        <div class="stats__text">
+                            <p>Recovered</p>
+                            <h2 id="recovered__cases">5,400</h2>
+                        </div>
+                        <div class="stats__graph">
+                            <img src="img/graph.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="stats__box">
+                        <div class="stats__text">
+                            <p>Active Cases</p>
+                            <h2 id="active__cases">5,890</h2>
+                        </div>
+                        <div class="stats__graph">
+                            <img src="img/graph.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="stats__box">
+                        <div class="stats__text">
+                            <p>Total Deaths</p>
+                            <h2 id="death__cases">890</h2>
+                        </div>
+                        <div class="stats__graph">
+                            <img src="img/graph.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="stats__map">
+                    <div class="map">
+                        <div class="map__header">
+                            <h3 class="header__medium">COVID-19 Affected Areas</h3>
+                            <div class="map__indicators">
+                                <p class="indicator__item">Most Affected </p>
+                                <p class="indicator__item">Less Affected </p>
+                            </div>
+                        </div>
+                        <div class="map__view">
+                            <div class="map__box">
+                                <img class="map__embedded" src="data:image/jpeg;base64,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" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__country">
+                        <h3 class="header__medium">Top Countries</h3>
+                        <div class="country__list">
+                            <div class="country__box">
+                                <div class="circle__chart">
+                                    circle
+                                </div>
+                                <div class="country__detail">
+                                    <h4 class="country__name">China</h4>
+                                    <p class="country__stats">
+                                        <span>Affected - 81.0k</span>
+                                        <span>Recovered - 72.44k</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="country__box">
+                                <div class="circle__chart">
+                                    circle
+                                </div>
+                                <div class="country__detail">
+                                    <h4 class="country__name">India</h4>
+                                    <p class="country__stats">
+                                        <span>Affected - 81.0k</span>
+                                        <span>Recovered - 72.44k</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="country__box">
+                                <div class="circle__chart">
+                                    circle
+                                </div>
+                                <div class="country__detail">
+                                    <h4 class="country__name">Italy</h4>
+                                    <p class="country__stats">
+                                        <span>Affected - 81.0k</span>
+                                        <span>Recovered - 72.44k</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__updates">
+                    <div class="news">
+                        <div class="news__image-box">
+                            <img class="news__image" src="img/symptoms.png" alt="symptoms">
+                        </div>
+                        <div class="news__detail">
+                            <div class="news__category">
+                                Innovation
+                            </div>
+                            <div class="news__title">
+                                5 symptoms of corona virus that you should know.
+                            </div>
+                            <a href="#" class="news__link">
+                                Read More <i class="fas fa-arrow-right news__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="updates">
+                        <div class="news__image-box">
+                            <img class="news__image" src="img/updates.png" alt="symptoms">
+                        </div>
+                        <div class="news__detail">
+                            <div class="news__category">
+                                Innovation
+                            </div>
+                            <div class="news__title">
+                                5 symptoms of corona virus that you should know.
+                            </div>
+                            <a href="#" class="news__link">
+                                Read More <i class="fas fa-arrow-right news__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="something">
+                    someting
+                </div> -->
+            </section>
+            <section class="reports">
+                <div class="ratio">
+                    <h2 class="header__normal">Ratio of Recovery</h2>
+                    <div class="ratio__chart">
+                        <img class="ratio__chart-img" src="img/ratio-chart.svg" alt="ratio chart">
+                    </div>
+                    <div class="ratio__stats">
+                        <p>
+                            <span>35k Affected </span>  <span> 25k recovered</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="country__report">
+                    <div class="country__report-header">
+                        <h2 class="header__normal">Country Reports</h2>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="country__search hide">
+                        <input type="text" placeholder="Search Country..." id="country__input">
+                    </div>
+                    <div class="countries">
+                        <ul class="country__lists">
+                            <li class="country__item">
+                                <p class="country__name--live">China</p>
+                                <p class="country__stats--live">4435 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">India</p>
+                                <p class="country__stats--live">4359 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">USA</p>
+                                <p class="country__stats--live">3432 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">Italy</p>
+                                <p class="country__stats--live">2342 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">France</p>
+                                <p class="country__stats--live">1232 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">USA</p>
+                                <p class="country__stats--live">3432 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">Italy</p>
+                                <p class="country__stats--live">2342 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                            <li class="country__item">
+                                <p class="country__name--live">France</p>
+                                <p class="country__stats--live">1232 <i class="fas fa-sort-up change-color"></i> </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="foooter-content">
+            Covid-tracker
+        </div>
+    </footer>
+</body>
+</html>
