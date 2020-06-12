@@ -27,12 +27,14 @@
     </header>
     <div class="navbar__overlay">
         <nav class="navbar__container">
-            <a class="navbar__link navbar__link--active" data-text="Home" href="" >Home</a>
-            <a class="navbar__link" data-text="About" href="" >About</a>
-            <a class="navbar__link" data-text="Portfolio" href="">Portfolio</a>
-            <a class="navbar__link" data-text="Designs" href="" >Designs</a>
-            <a class="navbar__link" data-text="Tutorials" href="" >Tutorials</a>
-            <a class="navbar__link" data-text="Contact" href="">Contact</a>
+            <div class="navbar__list">
+                <a class="navbar__link" data-text="Home" href="" >Home</a>
+                <a class="navbar__link" data-text="About" href="" >About</a>
+                <a class="navbar__link" data-text="Portfolio" href="">Portfolio</a>
+                <a class="navbar__link" data-text="Designs" href="" >Designs</a>
+                <a class="navbar__link" data-text="Tutorials" href="" >Tutorials</a>
+                <a class="navbar__link" data-text="Contact" href="">Contact</a>
+            </div>
         </nav>
         <div class="close__button" id="close__menu">
             <i class="fa fa-times"></i>
@@ -40,10 +42,27 @@
     </div>
     <main class="">
         <section class="landing container">
-            <h1 class="landing__heading">Hello There</h1>
-            <p class="landing__detail">
-                Well, you are looking at the website of someone who likes minimal design just like the personality. What else? I design UI/UX, Web Application, Mobile Application and many more. <span class="mousehover" style="color: #16a085">Check out my latest works here.</span>
+            <h1 class="landing__heading mousehover fadein">As<span class="decoration">hi</span>sh Chap<span class="decoration">again</span> </h1>
+            <p class="landing__designation">UI/UX and Web Designer</p>
+            <p class="landing__detail fadein-delay">
+                Well, you are looking at the website of someone who likes minimal design just like the personality. What else? I design UI/UX, Web Application, Mobile Application and many more. 
             </p>
+
+            <div class="landing__links">
+                <div class="hire-options">
+                    <a href="#" class="hire-item" id="copy-email">Copy email to clipboard</a>
+                    <hr>
+                    <a href="#" class="hire-item" id="send-direct">Open your email app</a>
+                </div>
+                <a class="landing__link--main mousehover">Let's Talk Work</a>
+                <a class="landing__link--another mousehover">
+                    <svg width="29" height="29" style="position: relative;top: 10px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 1)" stroke="#f5c15d" fill="none" fill-rule="evenodd"><path stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round" d="M9.1 12.012l4.095 4.55 4.095-4.55"></path><circle stroke-width="1.638" cx="13.195" cy="13.195" r="13.195"></circle></g></svg>
+                    See my design works</a>
+            </div>
+            <!-- <div class="landing__image-box">
+                <img src="images/developer-screen.svg" alt="">
+            </div> -->
+            <div class="animate-circle"></div>
         </section>
 
         <section class="portfolio container">
@@ -203,6 +222,7 @@
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
+    <script src="js/components.js"></script>
 </body>
 </html>

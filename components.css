@@ -19,6 +19,7 @@
     transform: scaleX(0);
     transform-origin: right;
     animation: overlay-animation-close .8s cubic-bezier(.42,-0.35,.54,1.09) 2s backwards;
+    cursor: default;
 }
 .navbar__container{
     width: 100%;
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative
 }
 .hide__menu{
     display: none;
@@ -51,6 +53,12 @@
         transform: scaleX(0);
     }
 }
+.navbar__list{
+    /* position: relative!important; */
+}
+.navbar__list:hover .navbar__link{
+    color: #474747;
+}
 
 .navbar__link{
     display: inline-block;
@@ -60,7 +68,7 @@
     margin: 0 1rem;
     padding: 0 .5rem;
     font-weight: 100;
-    color: var(--color-white);
+    color: #ebebeb;
     transition: all .3s ease;
     /* position: relative; */
     opacity: 0;
@@ -87,21 +95,37 @@
     animation: menu-item-animation .3s forwards 2.25s ease-in-out;
 }
 .navbar__link::before{
-    content: attr(attr-text);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: -100%;
+    left: -70%;
     transform: translate(-50%, -50%);
     font-size: 6rem;
-    color: #fff;
+    color: #757575;
     font-weight: 700;
     transition: .5s;
     white-space: nowrap;
-    letter-spacing: 20px;
+    letter-spacing: 10px;
+    opacity: 0;
+    z-index: -1;
+    transform: rotate(0deg);
 }
 .navbar__link:hover{
-    color: #f1c40f;
+    color: #f1c40f!important;
+    font-weight: 800;
     /* border-bottom: 2px solid var(--color-primary); */
+}
+.navbar__link:hover::before{
+    content: attr(data-text);
+    opacity: 1;
+    animation: nav-rotate .5s cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+}
+@keyframes nav-rotate{
+    0%, 100%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
 }
 .navbar__link--active{
     padding: 1.5rem .5rem;
@@ -162,3 +186,30 @@
 }
 
 /* follow mouse cursor */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #d35400;  */
+    background: linear-gradient(to bottom, #fff, #d35400) ; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #fff, #d35400) ; 
+}
+
+
+.svg-head{
+    background-color: #d35400;
+}

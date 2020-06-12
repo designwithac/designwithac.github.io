@@ -61,7 +61,8 @@
                     <div class="stats__box">
                         <div class="stats__text ">
                             <p>Total Cases</p>
-                            <h2 id="total__cases">309,890</h2>
+                            <h2 id="total__cases">00</h2>
+                            <p class="today" id="new-case">00</ <span>(Today)</span> p>
                         </div>
                         <div class="stats__graph">
                             <img src="img/graph.svg" alt="">
@@ -70,7 +71,8 @@
                     <div class="stats__box">
                         <div class="stats__text">
                             <p>Recovered</p>
-                            <h2 id="recovered__cases">5,400</h2>
+                            <h2 id="recovered__cases">00</h2>
+                            <p class="today" id="new-recovered" <span>(Today)</span> >00</p>
                         </div>
                         <div class="stats__graph">
                             <img src="img/graph.svg" alt="">
@@ -79,7 +81,8 @@
                     <div class="stats__box">
                         <div class="stats__text">
                             <p>Active Cases</p>
-                            <h2 id="active__cases">5,890</h2>
+                            <h2 id="active__cases">00</h2>
+                            <p class="today" id="new-active">00 <span>(Today)</span> </p>
                         </div>
                         <div class="stats__graph">
                             <img src="img/graph.svg" alt="">
@@ -88,7 +91,8 @@
                     <div class="stats__box">
                         <div class="stats__text">
                             <p>Total Deaths</p>
-                            <h2 id="death__cases">890</h2>
+                            <h2 id="death__cases">00</h2>
+                            <p class="today" id="new-death">00< <span>(Today)</span> /p>
                         </div>
                         <div class="stats__graph">
                             <img src="img/graph.svg" alt="">
@@ -212,7 +216,7 @@
                     </div>
                     <div class="countries">
                         <ul class="country__lists">
-                            <li class="country__item">
+                            <!-- <li class="country__item">
                                 <p class="country__name--live">China</p>
                                 <p class="country__stats--live">4435 <i class="fas fa-sort-up change-color"></i> </p>
                             </li>
@@ -243,7 +247,7 @@
                             <li class="country__item">
                                 <p class="country__name--live">France</p>
                                 <p class="country__stats--live">1232 <i class="fas fa-sort-up change-color"></i> </p>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -256,6 +260,8 @@
         </div>
     </footer>
 
+    <script src="js/dashboard-countries.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/dashboard.js"></script>
 </body>
 </html>
