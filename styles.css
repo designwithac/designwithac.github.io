@@ -428,7 +428,8 @@ body>a:hover ~ #cursor{
     object-fit: contain;
     transform: scale(1);
     transition: all .5s ease;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
+
 }
 .portfolio__detail{
     position: absolute;
