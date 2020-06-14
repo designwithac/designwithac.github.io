@@ -135,6 +135,23 @@ body>a:hover ~ #cursor{
 .color--3{
     color: #16a085
 }
+.social__links{
+    display: flex;
+}
+.social__link--item{
+    text-decoration: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .3rem;
+    border-radius: 50%;
+}
+.social__link--item a i{
+    color: #333;
+}
 
 .landing{
     padding: 2rem 4rem 3rem;
@@ -147,6 +164,10 @@ body>a:hover ~ #cursor{
     /* width: 100%; */
     margin: 0 auto;
 }
+.landing__header-container{
+    /* border: 1px solid #ff8c40; */
+    width: 100%;
+}
 .landing__heading{
     font-weight: 800;
     font-size: 4rem;
@@ -154,7 +175,7 @@ body>a:hover ~ #cursor{
     color: var(--color-primary-text);
     text-transform: uppercase;
     transition: .2s ease-in-out;
-    display:inline-block;
+    /* display:inline-block; */
 }
 .decoration{
     transition: .2s ease-in-out;
@@ -168,25 +189,25 @@ body>a:hover ~ #cursor{
     transform: translateX(0);
     transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.landing__heading:hover{
+.landing__header-container:hover .landing__heading{
     font-weight: 300;
     color: #ebebeb;
 }
-.landing__heading:hover .decoration{
+.landing__header-container:hover .decoration{
     font-weight: 800;
     opacity: 1;
     color: #d35400;
 }
-.landing__heading:hover + .landing__designation{
+.landing__header-container:hover .landing__designation{
     color: #000;
     display: inline-block;
     transform: translate(50%, -63px);
 }
-.landing__heading:hover .decoration:nth-child(1){
+.landing__header-container:hover .decoration:nth-child(1){
     transform: translateX(-71px);
     /* color: #fff; */
 }
-.landing__heading:hover .decoration:nth-child(2){
+.landing__header-container:hover .decoration:nth-child(2){
     transform: translateX(-150%);
 }
 
@@ -240,7 +261,8 @@ body>a:hover ~ #cursor{
     padding: 0 2rem;
     border-radius: 1rem;
     display: none;
-    transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    box-shadow: 0 .5rem 1rem #0000004a;
+    transition: all .3s ease-in-out;
 }
 .hire-item{
     text-decoration: none;
@@ -251,10 +273,7 @@ body>a:hover ~ #cursor{
     padding: .2rem 0;
     color: var(--color-primary);
 }
-.landing__link--main:hover ~ .hire-options{
-    display: block!important;
-    background-color: #d35400!important;
-}
+
 #copy-email{
 
 }

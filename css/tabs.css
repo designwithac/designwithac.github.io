@@ -1,0 +1,17 @@
+.tab__content-item{
+    transition: .5s ease-in-out;
+}
+.category__item{
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content,
+#tab-5-content,
+#tab-6-content{
+    display: none;
+}
+.show{
+    display: block!important;
+}

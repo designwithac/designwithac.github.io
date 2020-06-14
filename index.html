@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/prototypes.css">
 </head>
 <body>
     <div id="cursor"></div>
@@ -20,6 +22,17 @@
             <span class="color--1">dgn.</span>
             <span class="color--2">wd.</span>
             <span class="color--3">AC</span>
+        </div>
+        <div class="social__links">
+            <div class="social__link--item">
+                <a href="https://instagram.com/designwithac" target=_blank><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="social__link--item">
+                <a href="https://twitter.com/designwithac" target=_blank><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="social__link--item">
+                <a href="https://facebook.com/aashishchapagain" target=_blank><i class="fa fa-facebook"></i></a>
+            </div>
         </div>
         <div class="toggle__navbar" id="show_menu">
             <i class="fa fa-bars toggle__icon"></i>
@@ -42,8 +55,10 @@
     </div>
     <main class="">
         <section class="landing container">
-            <h1 class="landing__heading mousehover fadein">As<span class="decoration">hi</span>sh Chap<span class="decoration">again</span> </h1>
-            <p class="landing__designation">UI/UX and Web Designer</p>
+           <div class="landing__header-container">
+                <h1 class="landing__heading mousehover fadein">As<span class="decoration">hi</span>sh Chap<span class="decoration">again</span> </h1>
+                <p class="landing__designation">UI/UX and Web Designer</p>
+           </div>
             <p class="landing__detail fadein-delay">
                 Well, you are looking at the website of someone who likes minimal design just like the personality. What else? I design UI/UX, Web Application, Mobile Application and many more. 
             </p>
@@ -54,7 +69,7 @@
                     <hr>
                     <a href="#" class="hire-item" id="send-direct">Open your email app</a>
                 </div>
-                <a class="landing__link--main mousehover">Let's Talk Work</a>
+                <a class="landing__link--main mousehover">aashish@gmail.com</a>
                 <a class="landing__link--another mousehover">
                     <svg width="29" height="29" style="position: relative;top: 10px" xmlns="http://www.w3.org/2000/svg"><g transform="translate(1 1)" stroke="#f5c15d" fill="none" fill-rule="evenodd"><path stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round" d="M9.1 12.012l4.095 4.55 4.095-4.55"></path><circle stroke-width="1.638" cx="13.195" cy="13.195" r="13.195"></circle></g></svg>
                     See my design works</a>
@@ -69,62 +84,101 @@
             <div class=" portfolio__header">
                 <h2 class="primary__heading">My Latest Works</h2>
                 <div class="portfolio__category">
-                    <ul>
-                        <li class="portfolio__category--active mousehover">100DaysofCode</li>
-                        <li class="mousehover" >UX Prototypes</li>
-                        <li class="mousehover" >Web Designs</li>
-                        <li class="mousehover" >Mobile App Design</li>
-                        <li class="mousehover" >Applications</li>
-                        <li class="mousehover" >Others</li>
+                    <ul id="category__list">
+                        <li id="tab-1" class="category__item portfolio__category--active mousehover">100DaysofCode</li>
+                        <li id="tab-2" class="category__item mousehover" >UX Prototypes</li>
+                        <li id="tab-3" class="category__item mousehover" >Web Designs</li>
+                        <li id="tab-4" class="category__item mousehover" >Mobile App Design</li>
+                        <li id="tab-5" class="category__item mousehover" >Applications</li>
+                        <li id="tab-6" class="category__item mousehover" >Others</li>
                     </ul>
                 </div>
                 <a class="view-all" href="#">Explore More</a>
             </div>
-            <div class="portfolio__section">
-                <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/covid-tracker/dashboard.html" target="_blank">
-                    <div class="portfolio__image-box">
-                        <!-- <i class="fas fa-stopwatch"></i> -->
-                        <img src="images/work-images/covid.svg" alt="">
-                    </div>
-                    <div class="portfolio__detail">
-                        <h3 class="secondary__heading mousehover">COVID-19 Tracker</h3> 
-                    </div>
-                </a>
-                <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-timer-day-1" target="_blank">
-                    <div class="portfolio__image-box">
-                        <!-- <i class="fas fa-stopwatch"></i> -->
-                        <img src="images/work-images/timer.svg" alt="">
-                    </div>
-                    <div class="portfolio__detail">
-                        <h3 class="secondary__heading mousehover">JavaScript Timer</h3> 
-                    </div>
-                </a>
-                <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-coming-soon-countdown-day-2" target="_blank">
-                    <div class="portfolio__image-box">
-                        <img src="images/work-images/comingsoon.svg" alt="">
-                    </div>
-                    <div class="portfolio__detail">
-                        <h3 class="secondary__heading mousehover">Countdown Page (Live)</h3>
-                    </div>
-                </a>
-                <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-calculator-day-3/" target="_blank">
-                    <div class="portfolio__image-box">
-                        <img src="images/work-images/calculator.svg" alt="">
-                    </div>
-                    <div class="portfolio__detail">
-                        <h3 class="secondary__heading mousehover">Calculator App (Live)</h3>
-                    </div>
-                </a>
-                <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-todo-list-day-5/" target="_blank">
-                    <div class="portfolio__image-box">
-                        <img src="images/work-images/todo.svg" alt="">
-                    </div>
-                    <div class="portfolio__detail">
-                        <h3 class="secondary__heading mousehover">Todo List (Live)</h3>
-                    </div>
-                </a>
-                
+            <div id="tab-1-content" class="tab__content-item show">
+                <div class="portfolio__section">
+                    <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/covid-tracker/dashboard.html" target="_blank">
+                        <div class="portfolio__image-box">
+                            <!-- <i class="fas fa-stopwatch"></i> -->
+                            <img src="images/work-images/covid.svg" alt="">
+                        </div>
+                        <div class="portfolio__detail">
+                            <h3 class="secondary__heading mousehover">COVID-19 Tracker</h3> 
+                        </div>
+                    </a>
+                    <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-timer-day-1" target="_blank">
+                        <div class="portfolio__image-box">
+                            <!-- <i class="fas fa-stopwatch"></i> -->
+                            <img src="images/work-images/timer.svg" alt="">
+                        </div>
+                        <div class="portfolio__detail">
+                            <h3 class="secondary__heading mousehover">JavaScript Timer</h3> 
+                        </div>
+                    </a>
+                    <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-coming-soon-countdown-day-2" target="_blank">
+                        <div class="portfolio__image-box">
+                            <img src="images/work-images/comingsoon.svg" alt="">
+                        </div>
+                        <div class="portfolio__detail">
+                            <h3 class="secondary__heading mousehover">Countdown Page (Live)</h3>
+                        </div>
+                    </a>
+                    <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-calculator-day-3/" target="_blank">
+                        <div class="portfolio__image-box">
+                            <img src="images/work-images/calculator.svg" alt="">
+                        </div>
+                        <div class="portfolio__detail">
+                            <h3 class="secondary__heading mousehover">Calculator App (Live)</h3>
+                        </div>
+                    </a>
+                    <a class="portfolio__card" title="Click to view Demo" href="projects/100daysofcode/js-todo-list-day-5/" target="_blank">
+                        <div class="portfolio__image-box">
+                            <img src="images/work-images/todo.svg" alt="">
+                        </div>
+                        <div class="portfolio__detail">
+                            <h3 class="secondary__heading mousehover">Todo List (Live)</h3>
+                        </div>
+                    </a>
+                    
+                </div>
             </div>
+            <div id="tab-2-content" class="tab__content-item">
+                <!-- <h2 class="secondary__heading">UI/UX Designs</h2> -->
+                <div class="prototype__list">
+                    <div class="prototype__item">
+                        <div class="prototype__image-box">
+                            <figure>
+                                <img class="prototype__image" src="images/work-images/uidesigns/covid-website.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="prototype__item">
+                        <div class="prototype__image-box">
+                            <figure>
+                                <img class="prototype__image" src="images/work-images/uidesigns/travel-website.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="prototype__item">
+                        <div class="prototype__image-box">
+                            <figure>
+                                <img class="prototype__image" src="images/work-images/uidesigns/company-website.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="prototype__item">
+                        <div class="prototype__image-box">
+                            <figure>
+                                <img class="prototype__image" src="images/work-images/uidesigns/mobile-app.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3-content" class="tab__content-item">tab 3 content</div>
+            <div id="tab-4-content" class="tab__content-item">tab 4 content</div>
+            <div id="tab-5-content" class="tab__content-item">tab 5 content</div>
+            <div id="tab-6-content" class="tab__content-item">tab 6 content</div>
 
             <div class="view-more__section">
                 <a class="view-more__button" href="#">Load More</a>
@@ -209,5 +263,6 @@
 
     <script src="app.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/tabs.js"></script>
 </body>
 </html>

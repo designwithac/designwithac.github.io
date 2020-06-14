@@ -20,3 +20,27 @@
     // console.log(cursor);
 });
 // });
+
+
+const hireMeBttn = document.querySelector('.landing__link--main');
+const hireOptions = document.querySelector('.hire-options');
+const copyEmail = document.getElementById('copy-email');
+
+hireMeBttn.addEventListener('mouseenter', showHireOptions);
+hireMeBttn.addEventListener('mouseleave', hideHireOptions);
+copyEmail.addEventListener('click', copyEmailToClipboard);
+
+function showHireOptions(){
+    hireOptions.classList.add('show');
+}
+function hideHireOptions(){
+    hireOptions.classList.remove('show');
+}
+
+function copyEmailToClipboard(){
+    // copyEmail.select();
+    // const hireMeBttn = document.querySelector('.landing__link--main');
+
+    document.execCommand('copy');
+    console.log('copied value is : '+ hireMeBttn.textContent);
+}
